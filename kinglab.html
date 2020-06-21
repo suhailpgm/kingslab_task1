@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v4.0.1" />
+    <title>task1_flipcard</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.5/examples/starter-template/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="/docs/4.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/4.5/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/4.5/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/4.5/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg"
+      color="#563d7c"
+    />
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico" />
+    <meta
+      name="msapplication-config"
+      content="/docs/4.5/assets/img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#563d7c" />
+
+    <style>
+      .card-flip > div {
+        backface-visibility: hidden;
+        transition: transform 300ms;
+        transition-timing-function: linear;
+        width: 100%;
+        height: 250px;
+
+        margin: 0;
+        display: flex;
+      }
+
+      .card-front {
+        transform: rotateY(0deg);
+      }
+
+      .card-back {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+      }
+
+      .card-flip:hover .card-front {
+        transform: rotateY(-180deg);
+      }
+
+      .card-flip:hover .card-back {
+        transform: rotateY(0deg);
+      }
+      .img_area {
+        height: 100%;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+      }
+      hr {
+        border: 7px solid red;
+      }
+
+      .fs-10 {
+        font-size: smaller;
+      }
+      .flip-card {
+        text-align: center;
+      }
+      .hdline {
+        display: inline-block;
+        color: red;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet" />
+  </head>
+  <body><div class="container-flex ">
+		<div class="row">
+			<p></p>
+		</div>
+		<div class="container-flex bg-danger ">
+			
+
+		</div>
+		
+		<div class="row  justify-content-center text-center">
+			
+		</div>
+    <main role="main" class="flip-card container-flex">
+      <hr />
+      <div class="hdline mt-3" style="width: fit-content;">
+        <h1>FEATURED PRODUCTS</h1>
+        <hr class="mt-1" style="border: 2px solid red;" />
+      </div>
+
+      <div class="container mt-3 mb-5">
+        <div class="d-flex justify-content-around flex-wrap">
+          <div class="col-sm-4 mt-4">
+            <div class="card card-flip">
+              <div class="card-front text-white bg-dark">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaNArklkLsemJIC18bUn_L8kwjP1eQ83aFutdj7ICyyqDhW8ST&usqp=CAU" class="img_area" />
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body img_area">
+                  <h5 class="card-title mt-3">
+                    <b>Bonnel spring mattress 1</b>
+                  </h5>
+
+                  <p class="card-text fs-10">
+                    back pain, Orthopedic Memory Foam Mattress, latex mattress,
+                    Dual Comfort Mattress, are now our happy customers. Our
+                    product is the right fit for you. It is neither too hard nor
+                    too soft. It is comfortable, breathable and durable
+                  </p>
+                  <small><a>learn more </a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-4">
+            <div class="card card-flip">
+              <div class="card-front text-white bg-dark">
+                <img src="https://ak1.ostkcdn.com/images/products/24116607/Serta-7-inch-Firm-Innerspring-Twin-size-Mattress-cbe991e5-e7f7-4336-bfd2-294dcdbb99e3_600.jpg?impolicy=medium" class="img_area" />
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body img_area">
+                  <h5 class="card-title mt-3">
+                    <b>Bonnel spring mattress 2</b>
+                  </h5>
+
+                  <p class="card-text fs-10">
+                    back pain, Orthopedic Memory Foam Mattress, latex mattress,
+                    Dual Comfort Mattress, are now our happy customers. Our
+                    product is the right fit for you. It is neither too hard nor
+                    too soft. It is comfortable, breathable and durable
+                  </p>
+                  <small><a>learn more </a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-4">
+            <div class="card card-flip">
+              <div class="card-front text-white bg-dark">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpDRbRgO47b7I3x-MxLAfYFIZjqrZ6FEdp3mVJpmgQkx-he8_M&usqp=CAU" class="img_area" />
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body img_area">
+                  <h5 class="card-title mt-3">
+                    <b>Bonnel spring mattress 3</b>
+                  </h5>
+
+                  <p class="card-text fs-10">
+                    back pain, Orthopedic Memory Foam Mattress, latex mattress,
+                    Dual Comfort Mattress, are now our happy customers. Our
+                    product is the right fit for you. It is neither too hard nor
+                    too soft. It is comfortable, breathable and durable
+                  </p>
+                  <small><a>learn more </a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-4">
+            <div class="card card-flip">
+              <div class="card-front text-white bg-dark">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWExAMyqYB5h8R4Y6bl12UcdWPwIKt5QUZxLVHuIy93IvYFOhR&usqp=CAU" class="img_area" />
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body img_area">
+                  <h5 class="card-title mt-3">
+                    <b>Bonnel spring mattress 4</b>
+                  </h5>
+
+                  <p class="card-text fs-10">
+                    back pain, Orthopedic Memory Foam Mattress, latex mattress,
+                    Dual Comfort Mattress, are now our happy customers. Our
+                    product is the right fit for you. It is neither too hard nor
+                    too soft. It is comfortable, breathable and durable
+                  </p>
+                  <small><a>learn more </a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-4">
+            <div class="card card-flip">
+              <div class="card-front text-white bg-dark">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTBImNg1dSsiJ6XjSKUdXUOKkY3ZUwbR6n7981QbvCmEkYqGNt&usqp=CAU" class="img_area" />
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body img_area">
+                  <h5 class="card-title mt-3">
+                    <b>Bonnel spring mattress 5</b>
+                  </h5>
+
+                  <p class="card-text fs-10">
+                    back pain, Orthopedic Memory Foam Mattress, latex mattress,
+                    Dual Comfort Mattress, are now our happy customers. Our
+                    product is the right fit for you. It is neither too hard nor
+                    too soft. It is comfortable, breathable and durable
+                  </p>
+                  <small><a>learn more </a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-4">
+            <div class="card card-flip">
+              <div class="card-front text-white bg-dark">
+                <img src="https://sleepopolis.com/wp-content/uploads/2018/10/Helix-Nightfall-e1540517672637.jpg" class="img_area" />
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body img_area">
+                  <h5 class="card-title mt-3">
+                    <b>Bonnel spring mattress 6</b>
+                  </h5>
+
+                  <p class="card-text fs-10">
+                    back pain, Orthopedic Memory Foam Mattress, latex mattress,
+                    Dual Comfort Mattress, are now our happy customers. Our
+                    product is the right fit for you. It is neither too hard nor
+                    too soft. It is comfortable, breathable and durable
+                  </p>
+                  <small><a>learn more </a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </main>
+    <!-- /.container -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="/docs/4.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
